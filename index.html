@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="description">
+        <h1 class="description_header">Learn to code by watching others</h1>
+        <p class="description_text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="offer">
+        <h2 class="offer_header">
+          <strong>Try it free 7 days</strong>
+          then $20/mo. thereafter
+        </h2>
+        <form class="offer_form" novalidate>
+          <div class="offer_form-input-field">
+            <input
+              data-name
+              type="text"
+              id="name"
+              class="offer_form-input-field-input"
+              placeholder="First Name"
+              autocomplete="off"
+              required
+            />
+            <span data-name-error class="error_message"
+              >First Name cannot be empty</span
+            >
+          </div>
+          <div class="offer_form-input-field">
+            <input
+              data-lastname
+              type="text"
+              id="lastname"
+              class="offer_form-input-field-input"
+              placeholder="Last Name"
+              autocomplete="off"
+              required
+            />
+            <span data-lastname-error class="error_message">
+              Last Name cannot be empty</span
+            >
+          </div>
+          <div class="offer_form-input-field">
+            <input
+              data-email
+              type="email"
+              id="email"
+              class="offer_form-input-field-input"
+              placeholder="Email Address"
+              autocomplete="off"
+              required
+            />
+            <span data-email-error class="error_message"
+              >Looks like this is not an email</span
+            >
+          </div>
+          <div class="offer_form-input-field">
+            <input
+              data-password
+              type="password"
+              id="password"
+              class="offer_form-input-field-input"
+              placeholder="Password"
+              required
+            />/>
+            <span data-password-error class="error_message password"
+              >Password must contain
+              <span class="lower"> one lowercase letter</span>,
+              <span class="upper">one uppercase letter</span>,
+              <span class="number">at least one number</span>,
+              <span class="symbol">at least one symbol(!@#$%^&*()_+\-=)</span>
+              <span class="length criteria"
+                >and must be between 8-20 characters long</span
+              >
+            </span>
+          </div>
+          <button data-submit type="submit" class="submit">
+            claim your free trial
+          </button>
+          <p class="terms">
+            By clicking the button you are agreeing to out
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
